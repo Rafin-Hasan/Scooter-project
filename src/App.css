@@ -1,0 +1,203 @@
+/* =========== fonts ============ */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ========== common css =============== */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+h1 h2 h3 h4 h5 h6 p a{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+/* ============ variables =========== */
+:root{
+  --nuni: "Nunito", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --komola: #EF8D21
+}
+/* =========== navber css starts ======= */
+.main_nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main_nav .navp2 ul{
+  width: 303px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+}
+.main_nav .navp2 ul a{
+  font-family: var(--nuni);
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.main_nav ul a::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--komola);
+  left: 0;
+  top: 100%;
+  position: absolute;
+  transform: scale(0);
+  transition: all linear .2s;
+}
+.main_nav ul a:hover::after{
+  transform: scale(1);
+}
+.main_nav .navp3 ul{
+  display: flex;
+  padding-top: 46px;
+}
+.main_nav .navp3 ul a{
+  font-family: var(--nuni);
+  font-size: 16px;
+  font-weight: 600;
+  width: 134px;
+  height: 46px;
+  gap: 45px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear .3s;
+}
+.main_nav .navp3 ul a:hover{
+  background: var(--komola);
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+}
+/* ======================= navber css ends ========== */
+/* ======================= body css starts ========== */
+.body{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.body .body_text img{
+  position: absolute;
+  z-index: -1;
+  top: 75px;
+  left: -100px;
+}
+.body .body_text h2{
+  padding-top: 128px;
+  font-family: var(--poppins);
+  font-size: 49px;
+  font-weight: 400;
+  color: #364547;
+}
+.body .body_text h1{
+  font-family: var(--poppins);
+  font-size: 70px;
+  font-weight: 700;
+  color: #364547;
+}
+.body .body_text h1 span{
+  color: var(--komola);
+}
+.body .body_text p{
+  width: 521px;
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 400;
+  color: #364547;
+  line-height: 25px;
+  letter-spacing: 3%;
+}
+.buttons .btnbox{
+  width: 607px;
+  height: 75px;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #EDEDED;
+  align-items: center;
+  margin-top: 27px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.buttons .btnbox ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px;
+}
+.line{
+  width: 1px;
+  height: 33.5px;
+  background: #000;
+  color: #8F8F8F;
+  margin-top: -5px;
+}
+.buttons .btnbox a{
+  font-family: var(--poppins);
+  font-size: 15px;
+  font-weight: 400;
+  color: #8F8F8F;
+  background: transparent;
+  transition: all linear .3s;
+}
+.buttons .btnbox a:hover{
+  box-shadow: 0px 5px 2px #EF8D21;
+  text-align: center;
+  margin-top: -12px;
+  width: 134px;
+  height: 46px;
+  border-radius: 100px;
+  padding: 12px;
+  color: #000;
+  font-family: var(--nuni);
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right_leaf{
+  position: absolute;
+  top: 528px;
+  right: 0;
+  z-index: 1;
+}
+.left_leaf{
+  position: absolute;
+  top: 528px;
+  left: 0;
+  z-index: -1;
+}
